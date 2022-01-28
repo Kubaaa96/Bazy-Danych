@@ -4,9 +4,9 @@ import time
 class Mongo_db:
     def __init__(self, n):
         self.n = n
-        'MongoDB init part'
+        print('\nMongoDB')
         self.client = pymongo.MongoClient("mongodb://localhost:27017/", connect=False)
-        print(self.client.list_database_names())
+        # print(self.client.list_database_names())
         self.db = self.client["clinic_monogo"]
 
         self.insert_time = 0

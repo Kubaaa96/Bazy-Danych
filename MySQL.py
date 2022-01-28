@@ -6,6 +6,7 @@ class MySQL_db:
     def __init__(self, n):
         self.n = n
         'MySQL DB init part'
+        print("MySQL")
         self.db = pymysql.connect(host="localhost", user="python", passwd="", database="testowa")
         self.cursor = self.db.cursor()
 

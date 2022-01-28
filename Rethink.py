@@ -5,6 +5,7 @@ import rethinkdb as r
 class Rethink_db:
     def __init__(self, n):
         'RethinkDB init part'
+        print('\nRethinkDB')
         self.n = n
         self.rdb = r.RethinkDB()
         self.rdb.connect('localhost', 28015).repl()
