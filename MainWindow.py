@@ -98,6 +98,7 @@ class MainWindow(QMainWindow):
         self.main_line_edit.setFixedHeight(150)
         self.main_line_edit.setFixedWidth(300)
         self.main_line_edit.setValidator(QIntValidator(50, 99999))
+        self.main_line_edit.setAlignment(Qt.AlignmentFlag.AlignCenter)
         main_layout.addWidget(self.main_line_edit, alignment=Qt.AlignmentFlag.AlignCenter)
 
         main_layout.addWidget(self.__init_mysql())
