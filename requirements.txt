@@ -1,1 +1,6 @@
 PyQt6==6.2.0
+pymongo==4.0.1
+rethinkdb==2.4.8
+mysql==0.0.3
+mysqlclient==2.1.0
+mysql-connector-python==8.0.28
