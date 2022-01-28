@@ -5,8 +5,7 @@ import time
 class MySQL_db:
     def __init__(self, n):
         self.n = n
-        'MySQL DB init part'
-        print("MySQL")
+        print("\nMySQL")
         self.db = pymysql.connect(host="localhost", user="python", passwd="", database="testowa")
         self.cursor = self.db.cursor()
 
@@ -20,7 +19,6 @@ class MySQL_db:
         self.__insert()
         self.__update()
         self.__delete()
-
 
     def __select(self):
         begin = time.perf_counter()
@@ -70,6 +68,7 @@ class MySQL_db:
         end = time.perf_counter()
         self.delete_time = end - begin
         print(f"DELETE run {self.n} times in loop end after {self.delete_time:0.4f} seconds")
+
 
 def main():
     test_val1 = MySQL_db(1)
